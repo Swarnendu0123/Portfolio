@@ -358,6 +358,9 @@ body {
     .home-img img {
         width: 80vw;
     }
+    .card-container {
+        padding: 10px;
+    }
 
     .home-content {
         font-size: 2vw;
