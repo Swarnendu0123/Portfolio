@@ -312,10 +312,13 @@ body {
 }
 
 .say-hi {
-    margin: 0 0 60px 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
- .askforcofee {
+.askforcofee {
     font-size: 40px;
     font-weight: 900;
     background: linear-gradient(45deg, #7300ff, #ff00d9);
@@ -325,12 +328,16 @@ body {
 }
 
 .contact-description {
+    margin-top: 20px;
+    max-width: 1200px;
     font-size: 20px;
 }
-.mailOrwhatsapp{
+
+.mailOrwhatsapp {
     display: flex;
     flex-direction: column;
 }
+
 .mailOrwhatsapp a {
     display: flex;
     justify-content: space-evenly;
@@ -358,6 +365,7 @@ body {
     .home-img img {
         width: 80vw;
     }
+
     .card-container {
         padding: 10px;
     }
