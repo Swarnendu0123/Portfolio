@@ -350,6 +350,12 @@ body {
     color: #000000;
 }
 
+.justCickBelow {
+    font-weight: 600;
+    font-size: 40px;
+    color: #0000007d;
+}
+
 .mailOrwhatsapp i {
     color: #9036ff;
 }
