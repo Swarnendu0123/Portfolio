@@ -51,6 +51,8 @@ body {
 }
 
 .social {
+    display: flex;
+    justify-content: space-around;
     margin-top: 20px;
 }
 
@@ -59,8 +61,7 @@ body {
     color: #000000;
     font-weight: 600;
     text-decoration: none;
-    margin-right: 80px;
-    margin-left: 80px;
+  
     transition: .3s
 }
 
