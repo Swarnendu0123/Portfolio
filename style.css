@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Tilt+Neon&display=swap" rel="stylesheet');
 
 * {
-    transition: .4s;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -61,7 +60,7 @@ body {
     color: #000000;
     font-weight: 600;
     text-decoration: none;
-  
+
     transition: .3s
 }
 
@@ -73,7 +72,7 @@ body {
 .home {
     position: relative;
     width: 100%;
-  
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -137,7 +136,7 @@ body {
 }
 
 .card {
-    margin: 10px 10px ;
+    margin: 10px 10px;
     box-shadow: 1px 10px 10px 0px #cea6ff;
     border-radius: 10px;
     background-color: #ffffff;
@@ -203,21 +202,21 @@ body {
 }
 
 .primery-edu {
-    padding:0 10px;
+    padding: 0 10px;
     text-align: end;
 }
 
 .secondary-edu {
-    padding:0 10px;
-    grid-column: 2/2;
-    grid-row: 2/2;
+    padding: 0 10px;
+    grid-column-start: 2;
+    grid-row-start: 2;
 }
 
 .college {
-    padding:0 10px;
+    padding: 0 10px;
     text-align: end;
-    grid-column: 1/2;
-    grid-row: 3/3;
+    grid-column-start: 1;
+    grid-row-start: 3;
 }
 
 .edu-description {
@@ -243,11 +242,13 @@ body {
     padding: 20px;
     background-color: #ffffff;
 }
-.skills-container{
+
+.skills-container {
     flex-wrap: wrap;
     justify-content: space-around;
     display: flex;
 }
+
 .skills-title {
     padding: 20px;
     color: rgb(0, 0, 0);
@@ -260,7 +261,7 @@ body {
     transition: .4s;
     margin: 20px;
     box-shadow: 1px 1px 7px 1px #9036ff;
-    border:1px solid #00000049;
+    border: 1px solid #00000049;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -268,45 +269,53 @@ body {
     width: 300px;
     background-color: white;
 }
-.skill-cards:hover{
+
+.skill-cards:hover {
     box-shadow: 3px 1px 17px 1px #9036ff;
 }
-.skill-title{
-    margin:0 30px;
+
+.skill-title {
+    margin: 0 30px;
     font-size: 40px;
     font-weight: 600;
 }
+
 .skill-cards .logo {
     color: #9036ff;
     font-weight: 600;
     font-size: 70px;
 }
-.skill-cards i{
+
+.skill-cards i {
     color: #9036ff;
 }
 
-.skill-card-subheading{
+.skill-card-subheading {
     font-size: 30px;
     color: #00000079;
 }
+
 /* contact */
-.contact{
+.contact {
     margin: 50px 50px;
-  
+
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 70px;
     text-align: center;
 }
-.contact .material-symbols-outlined{
-   font-size: 54px;
-   color: #9036ff;
-   font-weight: 900;
+
+.contact .material-symbols-outlined {
+    font-size: 54px;
+    color: #9036ff;
+    font-weight: 900;
 }
-.say-hi{
-    margin:0 0 60px 0;
+
+.say-hi {
+    margin: 0 0 60px 0;
 }
-.mail .mailme{
+
+ .askforcofee {
     font-size: 40px;
     font-weight: 900;
     background: linear-gradient(45deg, #7300ff, #ff00d9);
@@ -314,33 +323,79 @@ body {
     background-clip: text;
     color: transparent;
 }
-.contact-description{
+
+.contact-description {
     font-size: 20px;
 }
-.mail a{
+.mailOrwhatsapp{
+    display: flex;
+    flex-direction: column;
+}
+.mailOrwhatsapp a {
     display: flex;
     justify-content: space-evenly;
-    font-size: 25px;
+    font-size: 18px;
     flex-wrap: wrap;
     border-radius: 10px;
-    /* padding: 10px; */
     border: none;
     text-decoration: none;
     background-color: #ffffff;
     color: #000000;
 }
-.mail i{
+
+.mailOrwhatsapp i {
     color: #9036ff;
 }
 
 /* media q */
 @media (max-width:650px) {
-    .nav a{
+    .nav a {
         display: none;
     }
 }
+
 @media (max-width:600px) {
-    .home-img img{
+    .home-img img {
         width: 80vw;
     }
+
+    .home-content {
+        font-size: 2vw;
+    }
+
+    .home-content h3 {
+        font-size: 5vw;
+    }
+
+    .hpme .home-content h3 span {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:1250px) {
+    .edu-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .primery-edu {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .secondary-edu {
+        margin: 50px;
+        text-align: center;
+        padding: 0 10px;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .college {
+        text-align: center;
+        padding: 0 10px;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
 }
