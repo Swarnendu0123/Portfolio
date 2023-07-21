@@ -28,7 +28,8 @@ body {
     z-index: 100;
     margin: 0;
 }
-.header-parent{
+
+.header-parent {
     width: 100%;
     top: 10px;
     position: sticky;
@@ -37,7 +38,7 @@ body {
     z-index: 100;
 }
 
-.logo {
+.header .logo {
     font-size: 40px;
     color: #9036ff;
     font-weight: 600;
@@ -83,7 +84,6 @@ body {
 .home {
     position: relative;
     width: 100%;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -172,7 +172,7 @@ body {
     font-weight: 600;
 }
 
-.card .project-description a{
+.card .project-description a {
     font-size: 17px;
     color: #000;
     padding: 10px 20px;
@@ -379,6 +379,17 @@ body {
     .nav a {
         display: none;
     }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .header .logo {
+        margin-left: 0;
+    }
 }
 
 @media (max-width:600px) {
@@ -401,7 +412,8 @@ body {
     .hpme .home-content h3 span {
         font-size: 2vw;
     }
-    .header .logo{
+
+    .header .logo {
         font-size: 25px;
     }
 }
