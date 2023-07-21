@@ -92,17 +92,18 @@ body {
 }
 
 .home-content {
+    margin-top: 20px;
     color: #000000;
 }
 
 .home-content h3 {
     font-size: 3em;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .home-content h1 {
     font-size: 4em;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .home-content h3 span {
