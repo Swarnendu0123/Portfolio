@@ -295,6 +295,7 @@ body {
 }
 
 .skill-cards .logo {
+    padding:0 20px;
     color: #9036ff;
     font-weight: 600;
     font-size: 70px;
