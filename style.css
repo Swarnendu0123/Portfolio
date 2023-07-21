@@ -112,6 +112,7 @@ body {
 }
 
 .home-content p {
+    margin-top: 10px;
     max-width: 600px;
     font-weight: 400;
     font-size: 20px;
@@ -121,9 +122,7 @@ body {
     max-height: 90vh;
 }
 
-.home-content h3:nth-last-of-type(1) {
-    margin-bottom: 30px;
-}
+
 
 /* projects */
 .projects {
