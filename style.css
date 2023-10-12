@@ -470,10 +470,18 @@ body {
 }
 
 .btn-black {
+  border: none;
   background-color: #000;
   padding: 10px;
   border-radius: 5px;
+  transition: .2s;
 }
+
+.btn-black:hover,
+.btn-white:hover {
+  transform: scale(1.1);
+}
+
 .btn-black a {
   font-size: 20px;
   color: white;
@@ -483,6 +491,7 @@ body {
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
+  transition: .2s;
 }
 .btn-white a {
   font-weight: 700;
