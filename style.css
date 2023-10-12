@@ -103,12 +103,13 @@ body {
 
 .home-content h1 {
   font-size: 4em;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .home-content h3 span {
-  color: #9036ff;
+  color: #821dff;
   font-size: 32px;
+  font-weight: 800;
 }
 
 .home-content p {
