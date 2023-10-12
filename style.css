@@ -271,7 +271,10 @@ body {
   border-radius: 20px;
   width: 100%;
 }
-
+.github-repo {
+    display: flex;
+    justify-content: space-around;
+}
 .github-repo a {
   display: flex;
   justify-content: space-around;
