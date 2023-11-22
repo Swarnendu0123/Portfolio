@@ -47,6 +47,13 @@ body {
   margin-left: 35px;
 }
 
+.header .logo span{
+  background-color: #000000c7;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .nav a {
   font-size: 20px;
   color: #000;
