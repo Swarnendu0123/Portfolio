@@ -15,11 +15,50 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tiny.cloud/1/wzxkfddbzuz3evm6txftthnl9iuvtlpl7cw0ewf0audnkhmz/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+
+    <script>
+      tinymce.init({
+        selector: "#mytextarea",
+        plugins: [
+          "a11ychecker",
+          "advlist",
+          "advcode",
+          "advtable",
+          "autolink",
+          "checklist",
+          "export",
+          "lists",
+          "link",
+          "image",
+          "charmap",
+          "preview",
+          "anchor",
+          "searchreplace",
+          "visualblocks",
+          "powerpaste",
+          "fullscreen",
+          "formatpainter",
+          "insertdatetime",
+          "media",
+          "table",
+          "help",
+          "wordcount",
+        ],
+        toolbar:
+          "undo redo | formatpainter casechange blocks | bold italic backcolor | " +
+          "alignleft aligncenter alignright alignjustify | " +
+          "bullist numlist checklist outdent indent | removeformat | a11ycheck code table help",
+      });
+    </script>
   </head>
   <body>
     <div class="header-parent">
       <header class="header">
-        <a href="https://dev.to/swarnendu0123" class="logo">Swarnendu's <span>DEV</span></a>
+        <a href="https://dev.to/swarnendu0123" class="logo"
+          >Swarnendu's <span>DEV</span></a
+        >
 
         <nav class="nav">
           <a href="#home">Home</a>
@@ -36,7 +75,7 @@
         <h3>Hi, I am</h3>
         <h1>Swarnendu Bhandari</h1>
         <h3>
-          a  Student Developer from <br /><span
+          a Student Developer from <br /><span
             >Indian Institute of Technology, Kharagpur</span
           >
         </h3>
@@ -184,7 +223,11 @@
             </a>
           </div>
           <div class="github-repo">
-            <button class="btn-black"><a href="https://github.com/Swarnendu0123/Medi-Connect-Plus">GitHub Repo</a></button>
+            <button class="btn-black">
+              <a href="https://github.com/Swarnendu0123/Medi-Connect-Plus"
+                >GitHub Repo</a
+              >
+            </button>
             <a href="https://github.com/Swarnendu0123/Medi-Connect-Plus">
               <i class="bx bxl-github"></i>
             </a>
@@ -202,7 +245,11 @@
             </a>
           </div>
           <div class="github-repo">
-            <button class="btn-black"><a href="https://swarnendu0123.github.io/Spotify-Clone/">Deployed WebSite</a></button>
+            <button class="btn-black">
+              <a href="https://swarnendu0123.github.io/Spotify-Clone/"
+                >Deployed WebSite</a
+              >
+            </button>
             <a href="https://swarnendu0123.github.io/Spotify-Clone/">
               <i class="bx bxl-github"></i>
             </a>
@@ -236,13 +283,85 @@
             </a>
           </div>
           <div class="github-repo">
-            <button class="btn-black"><a href="https://swarnendu0123.github.io/Gender-Predictor">Deployed WebSite</a></button>
+            <button class="btn-black">
+              <a href="https://swarnendu0123.github.io/Gender-Predictor"
+                >Deployed WebSite</a
+              >
+            </button>
             <a href="https://github.com/Swarnendu0123/Gender-Predictor">
               <i class="bx bxl-github"></i>
             </a>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="resume">
+      <h1 class="resume-title">Resume</h1>
+      <form method="post">
+        <textarea id="mytextarea">    <title>Swarnendu Bhandari - Resume</title>
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 20px;
+              }
+      
+              h1, h2, h3 {
+                  color: #333;
+              }
+      
+              p {
+                  margin-bottom: 10px;
+              }
+      
+              .contact-info {
+                  margin-bottom: 20px;
+              }
+      
+              .skills, .education, .projects, .position-of-responsibility, .achievements {
+                  margin-bottom: 30px;
+              }
+          </style>
+      </head>
+      <body>
+          <h1>Swarnendu Bhandari</h1>
+          <p class="contact-info">
+              Email: <a href="mailto:clickswarnendu123@gmail.com">clickswarnendu123@gmail.com</a><br>
+              Phone: (+91) 8101199607<br>
+              GitHub: <a href="https://twitter.com/Swarnendu0123" target="_blank">@Swarnendu0123</a>
+          </p>
+      
+          <h2>Skills</h2>
+          <p>Programming Language: Python, Javascript, Java, C, C++ (beginner level)</p>
+          <p>Framework & Libraries: React.js, Next.js, Mongoose, Pandas, NumPy</p>
+          <p>Database: MongoDB, SQL</p>
+      
+          <h2>Education</h2>
+          <p>Indian Institute of Technology, Kharagpur | Dual degree CGPA: 8.12 | (Nov ’22-Jun ’27)</p>
+          <p>XII (WBCHSE) | Krishnath College School, Berahampore 93.8% | 2022</p>
+          <p>X (WBBSE) | Panchthupi T. N. Institute | Murshidabad 84.7% | 2020</p>
+      
+          <h2>Projects</h2>
+          <h3>Medi Connect Plus - Java - <a href="https://github.com/yourusername/mediconnectplus" target="_blank">Github</a></h3>
+          <p>Developed MediConnectPlus, a patient-doctor management system, facilitating registration, login, and profile viewing.</p>
+          <p>Implemented automatic doctor assignment based on workload, optimizing patient allocation and doctor availability.</p>
+          <p>Utilized Java programming language for the project development, showcasing proficiency in object-oriented programming.</p>
+      
+          <h3>Spotify Clone - Frontend Desktop only - Html, CSS - <a href="https://github.com/yourusername/spotify-clone" target="_blank">Github</a></h3>
+          <p>Utilized HTML to structure and organize the content of my Spotify Clone web application, ensuring a clear and logical arrangement of elements.</p>
+          <p>Leveraged CSS to bring visual appeal and customization to the interface. Through CSS, I have customized fonts, colors, and layouts, creating a unique and engaging user experience.</p>
+      
+          <h3>Pokedex Image Converter - Python - <a href="https://github.com/yourusername/pokedex-image-converter" target="_blank">Github</a></h3>
+          <p>Created a Python script utilizing advanced image processing techniques to convert Pokémon images from various formats to PNG, enhancing accessibility and compatibility for diverse applications.</p>
+      
+          <h2>Position of Responsibility</h2>
+          <p>Web3 Cohort Associate | Kharagpur Blockchain Society, IIT Kharagpur (Jun’23 - present)</p>
+          <p>Contributed to the development of an innovative open-source Contract Store platform, facilitating secure smart contract access and transactions while offering customizable solutions through collaboration with skilled freelancers.</p>
+      
+          <h2>Achievements / Hobbies</h2>
+          <p>5 Star problem solver at HackerRank (<a href="https://www.hackerrank.com/yourhackerrankprofile" target="_blank">HackerRank Profile</a>)</p>
+          <p>Level 4 contributor at Hacktoberfest 23 (<a href="https://yourholipinprofile.com" target="_blank">Holipin Profile</a>)</p></textarea>
+      </form>
     </section>
 
     <section class="education" id="education">

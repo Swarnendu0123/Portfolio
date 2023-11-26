@@ -130,6 +130,17 @@ body {
   max-height: 90vh;
 }
 
+/* resume  */
+.resume{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.resume-title{
+font-size: 50px;
+text-align: center;
+}
+
 /* blogs */
 .blog {
   margin: 0px 50px;
